@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    border:none;
+    padding: 0px;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+header{
+    background-color: white;
+    grid-area: header;
+}
+#logo{
+    width: 100%; 
+}
+nav{
+    background-color: black;
+    grid-area: nav;
+    display: flex;
+}
+ul.botonera{
+    margin: 0px;
+    justify-content: space-around; 
+    display: none; 
+    flex-direction: column;
+}
+ul.botonera.show{
+    display: flex;
+}
+li.links{
+    list-style: none;
+}
+
+li a{
+    color: grey;    
+    text-decoration: none;
+    font-weight: bold;
+}
+footer{
+    text-align:center;
+    grid-area: pie;
+}
