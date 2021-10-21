@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Vis</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <div class="contacto">
+        <header>
+                <a href="../index.html"><img id="logo" src="../img/logo.jpg" alt="Estudio Vis"></a>   
+        </header>
+        <nav> 
+            <div class="btnmenu"><button type="menu" id="menu">MENU</button></div>
+            <ul class="botonera">
+                <li class="links"><a href="../html/proyectos.html"><p>Proyectos</p></a></li>
+                <li class="links"><a href="../html/estudio.html"><p>Estudio</p></a></li>
+                <li class="links"><a href="../html/contacto.html"><p>Contacto</p></a></li>
+            </ul>
+        </nav>
+        <h1 class=contactenos>Deje su comentario</h1>
+        <form class="formulario">
+            <p>Ingrese sus datos para enviar un comentario o presione editar una vez complete los datos para editar el comentario</p>
+            <p>Los espacios marcados con * son obligatorios</p>
+            <label for="nombre">Nombre*: </label><input type="text" id="nombre" name="nombre" value=""/>
+            <label for="mail">Mail*: </label><input type="text" id="mail" name="mail" value=""/> 
+            <label for="dia">Dia de la semana: </label> <input type="text" id="dia" name="dia" value=""/>  
+            <p class="consulta">Breve descripcion de la consulta</p>
+            <textarea name="comentario" id="comentario" rows="8" cols="40">
+            </textarea>
+            <div id="captcha">
+                <p id="random"></p>
+                <input type="text" placeholder="Captcha" id="captchatextbox"/>
+                <button type="button" id="submitcaptcha" class="btnEnviar">Enviar</button>
+            </div>
+            <div>
+                <p id="infocaptcha"></p>
+            </div>
+        </form>
+        <div class=botontres>
+        <button type="button" id="btn-tres" class="btnEnviar">Agregarx3</button>
+        </div>
+        <div class="cont_filtro">
+            <div class=filtrardia>
+                <label for="filtro">Filtro por dia: </label><input type="text" id="filtro" name="filtro" value="" placeholder="Ingrese su día en ingles"/>
+                <button type="button" id="filtrar" class="btnEnviar">Filtrar</button>
+            </div>
+            <table class="tablacoment">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Comentario</th>
+                        <th>Dia</th>
+                        <th>Borrar</th>
+                        <th>Editar</th>
+                    </tr>
+                </thead>
+                <tbody id="contentabla">
+                    
+                </tbody>
+            </table>
+        </div>
+        <footer><p>Gracias por su visita, siganos en <a href="#">Instagram</p></a></footer>
+    </div>
+    <script type= "text/javascript" src="../js/captcha.js"></script>
+    <script type= "text/javascript" src="../js/menu.js"></script>
+</body>
+</html>
