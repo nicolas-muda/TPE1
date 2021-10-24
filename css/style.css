@@ -137,3 +137,126 @@ input, textarea{
 .tablacoment thead{
     background-color: white;
 }
+
+@media only screen and (min-width: 600px){
+    #logo{
+        width: 20%;
+        background-color: white;
+        
+    }
+    ul.botonera{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%; 
+        margin-top: 0px;
+    }
+    .btnmenu{
+        display:none;
+    }
+    .inicio{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "articleuno figureuno"
+        "figuredos articledos"
+        "articletres articletres"
+        "pie pie";
+    }
+    .indexprincipal{
+        margin-top: 40px;
+        padding-right: 10px;
+        font-family: sans-serif;
+        font-weight: bold;
+    } 
+    .indexsecundario {
+        grid-area: articledos;
+        text-align: center;
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-top: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .indexterciario {
+        grid-area: articletres;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .proyectos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "art_proyect mapa"
+        "pie  pie";
+    }
+    .mapa {
+        grid-area: mapa;
+        padding-top: 20px;
+    }
+    .art_proyect {
+        grid-area: art_proyect;
+        font-family: Trebuchet, Helvetica, sans-serif;
+    }
+    .estudio{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "text_estudio estudiotabla"
+        "sectionestudio estudiotabla"
+        "asideestudio estudiotabla"
+        "pie pie";
+    }
+    .estudiotabla{
+         grid-area: estudiotabla;
+         padding-right: 5px;
+         margin-top: 60px;
+         margin-left: 30px;
+    }
+    .text_estudio {
+        grid-area: text_estudio;
+        font-family: Trebuchet, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .asideestudio {
+        grid-area: asideestudio;
+        font-family: Trebuchet, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .contacto{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "contactenos contactenos"
+        "formulario filtro"
+        "botontres filtro"
+        ". filtro"
+        "pie pie";
+    }
+    .contactenos, .formulario {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 1fr;
+    }
+    .filtrardia{
+        text-align: center;
+    }
+    .contacto footer {
+        text-align: center;
+        grid-area: pie;
+        margin: 10px;
+    }
+    .tablacoment {
+        grid-area: tablacoment;
+        margin: 5px;
+        width: 1fr;
+        margin-top: 10% ;
+        box-shadow: 10px 5px 5px black;
+    }
+}
