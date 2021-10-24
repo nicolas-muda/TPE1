@@ -89,3 +89,51 @@ footer{
     font-family: sans-serif;
     font-weight: bold;
 }
+
+input, textarea{
+    margin: 5px;
+    
+}
+.contacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "contactenos"
+    "formulario"
+    "botontres"
+    "filtro"
+    "pie";
+}
+.contactenos, .formulario{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.contactenos{grid-area: contactenos;}
+.formulario{grid-area: formulario;}
+.botontres{
+    grid-area: botontres;
+   text-align: center;
+   margin: 15px;
+}
+.btnEnviar{
+    color: white;
+    background: green;
+}
+.cont_filtro{grid-area: filtro;}
+.filtrardia{
+    text-align: center;
+}
+.tablacoment{
+    box-shadow: 10px 5px 5px black;
+    margin: 5px;
+}
+.tablacoment,td,tr,thead{
+    border: solid black;
+    border-collapse: collapse;
+}
+.tablacoment thead{
+    background-color: white;
+}
