@@ -39,3 +39,53 @@ footer{
     text-align:center;
     grid-area: pie;
 }
+.inicio{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "articleuno"
+    "figureuno"
+    "articledos"
+    "figuredos"
+    "articletres"
+    "pie";
+}
+#menu{
+    color: white;
+    background-color: black;
+    border: none;
+}
+.fotoindex{
+    width: 100%;
+    height: 70%;
+}
+.indexprincipal{
+    grid-area: articleuno;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.primerafoto{
+    grid-area: figureuno;
+    margin-bottom: 0px;
+}
+.indexsecundario{
+    grid-area: articledos;
+    text-align: center;
+    padding-left: 1px;
+    padding-right: 1px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.segundafoto{
+    grid-area: figuredos;
+    margin-bottom: 0px;
+}
+.indexterciario{
+    grid-area: articletres;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
