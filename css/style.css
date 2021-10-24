@@ -1,41 +1,87 @@
-body{
+body {
     margin: 0px;
-    border:none;
+    border: none;
     padding: 0px;
     background-image: url(fondo.jpg);
     background-size: cover;
 }
-header{
+
+header {
     background-color: white;
     grid-area: header;
 }
-#logo{
-    width: 100%; 
+
+#logo {
+    width: 100%;
 }
-nav{
+
+nav {
     background-color: black;
     grid-area: nav;
     display: flex;
 }
-ul.botonera{
+
+ul.botonera {
     margin: 0px;
-    justify-content: space-around; 
-    display: none; 
+    justify-content: space-around;
+    display: none;
     flex-direction: column;
 }
-ul.botonera.show{
+
+ul.botonera.show {
     display: flex;
 }
-li.links{
+
+li.links {
     list-style: none;
 }
 
-li a{
-    color: grey;    
+li a {
+    color: grey;
     text-decoration: none;
     font-weight: bold;
 }
-footer{
-    text-align:center;
+
+footer {
+    text-align: center;
     grid-area: pie;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "nav" "art_proyect" "mapa" "pie";
+}
+
+#lugares {
+    text-align: center;
+}
+
+.art_proyect {
+    grid-area: art_proyect;
+    font-family: Trebuchet, Helvetica, sans-serif;
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+iframe {
+    margin-left: 5px;
+    width: 80%;
+    height: 100%;
+}
+@media only screen and (min-width: 600px) {
+    .proyectos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header" "nav nav" "art_proyect mapa" "pie  pie";
+    }
+    .mapa {
+        grid-area: mapa;
+        padding-top: 20px;
+    }
+    .art_proyect {
+        grid-area: art_proyect;
+        font-family: Trebuchet, Helvetica, sans-serif;
+    }
 }
