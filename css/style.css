@@ -114,7 +114,7 @@ input, textarea{
     "pie";
 }
 .contactenos, .formulario{
-    margin-left: 15px;
+    margin-left: 13px;
     display: flex;
     flex-direction: column;
 }
